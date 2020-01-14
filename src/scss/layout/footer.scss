@@ -1,0 +1,21 @@
+.footer {
+  height: var(--footer-height);
+  background-color: var(--brown);
+  color: var(--brightYellow);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include mobfirst(675) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  &__center {
+    order: 1;
+    @include mobfirst(675) {
+      order: 0;
+    }
+  }
+}

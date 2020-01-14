@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700|Open+Sans:300,400,700&subset=cyrillic');
+
+@import './abstracts/animation';
+@import './abstracts/mixins';
+@import './abstracts/variables';
+@import './base/base';
+@import './components/preloader';
+@import './layout/header';
+@import './components/logo';
+@import './components/navbar';
+@import './components/menu';
+@import './components/switcher';
+@import './components/banner';
+@import './components/social';
+@import './components/video';
+@import './components/form';
+@import './components/modal';
+@import './components/map';
+@import './sections/about';
+@import './sections/drinks';
+@import './sections/works';
+@import './sections/contact';
+@import './layout/footer';

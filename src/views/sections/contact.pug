@@ -1,0 +1,25 @@
+section#contact.contact.section__padding.section__padding-last
+  .grid__container
+    .contact__left
+      h2.titles.contact__title Контакты
+      .underline
+    .contact__container
+      include ../components/map
+      .contact__info
+        .contact__item
+          svg.contact__svg
+              use.contact__img(xlink:href="/img/sprite.svg#location")
+          h2.contact__subtitle адрес
+          span.contact__text 61000 харьков ул. Клочковская 101-а
+        .contact__item
+          svg.contact__svg
+              use.contact__img(xlink:href="/img/sprite.svg#headphones")
+          h2.contact__subtitle поддержка
+          p.contact__text &#9743; #[span +8 (066) 724 5234]
+          p.contact__text &#9993; #[span dergachevkonstantin@gmail.com]
+        .contact__item
+          svg.contact__svg
+              use.contact__img(xlink:href="/img/sprite.svg#time")
+          h2.contact__subtitle рабочее время
+          span.contact__text понедельник-пятница 8.00 - 20.00
+          span.contact__text суббота-воскресенье 9.00 - 22.00

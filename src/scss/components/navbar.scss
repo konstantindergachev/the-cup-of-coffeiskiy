@@ -1,0 +1,49 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--yellow);
+  z-index: 4;
+  &__list {
+    display: block;
+    text-transform: capitalize;
+  }
+  &__item {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    &:first-child {
+      // padding-left: 2rem;
+      font-size: 3rem;
+    }
+    &:hover {
+      background-color: var(--brown);
+      padding-left: 1.5rem;
+      & .logo__img {
+        fill: var(--yellow);
+      }
+    }
+  }
+  &__link {
+    color: var(--brown);
+    &:hover {
+      color: var(--yellow);
+    }
+  }
+  // &__hide{
+  //   width: 0;
+  //   overflow: hidden;
+  //   transition: all 0.5s linear;
+  // }
+}
+.navbar {
+  width: 0;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+
+.navbar__show {
+  width: 10rem;
+}

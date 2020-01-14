@@ -1,0 +1,30 @@
+.preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--brightYellow);
+  z-index: 999;
+}
+
+.ripple {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  z-index: 1000;
+  div {
+    position: absolute;
+    border: 4px solid var(--brown);
+    opacity: 1;
+    border-radius: 50%;
+    animation: ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    &:nth-child(2) {
+      animation-delay: -0.5s;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.social {
+  border: 0.1rem solid var(--yellow);
+  border-radius: 50%;
+  display: inline-flex;
+  height: 40px;
+  width: 40px;
+  transition: all .3s linear;
+  &:hover {
+    background-color: var(--black);
+    color: var(--yellow);
+  }
+  &:not(:first-child) {
+    margin: 0 5px;
+  }
+  &__container {
+    grid-area: socials;
+    align-self: flex-start;
+    justify-self: center;
+    z-index: 3;
+  }
+}
+
+.social__svg {
+  padding: 0.4rem;
+}
+.social__img {
+  fill: var(--yellow);
+}

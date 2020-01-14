@@ -1,0 +1,31 @@
+.about{
+  &__container{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 100%;
+    grid-gap: 2rem;
+    @include mobfirst(768){
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+  &__left{
+    padding: 1rem 0.5rem;
+  }
+  &__title{
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+  &__text{
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    color: var(--grey);
+  }
+  &__img{
+    &-special{
+      @include mobfirst(768){
+        order: -1;
+      }
+    }
+  }
+}

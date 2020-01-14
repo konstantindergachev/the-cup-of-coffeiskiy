@@ -1,0 +1,13 @@
+include ../mixins/magnifier
+sections#work.work.section__padding
+  .grid__container
+    .work__left
+      h2.titles.work__title наше кофе
+      .underline
+    .work__container
+      -for(let i = 1; i <= 9; i++)
+        article(class=`work__item item-${i}`)
+          img.work__img(src=`/img/picture-${i+2}.jpg`, alt=`picture-${i+2}`)
+          a.work__magnifier(href="#" data-id=i+2)
+            +magnifier("/img/sprite.svg#magnifier")
+  include ../components/modal

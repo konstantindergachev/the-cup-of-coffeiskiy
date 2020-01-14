@@ -1,0 +1,109 @@
+.drink {
+  background-color: var(--brown);
+  color: var(--brightYellow);
+  text-transform: capitalize;
+  &__form,
+  &__card {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    grid-row-gap: 1.25rem;
+    @include mobfirst(768) {
+      grid-template-columns: 70%;
+    }
+  }
+  &__form {
+    &-feedback {
+      border: 0.1rem solid var(--brightYellow);
+      padding: 0.25rem;
+      display: none;
+    }
+    &-title {
+      font-size: 3rem;
+    }
+  }
+  &__card {
+    &-title {
+      font-size: 3rem;
+    }
+    &-list {
+      justify-content: center;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-row-gap: 2rem;
+      @include mobfirst(768) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+      }
+    }
+  }
+}
+
+.input__name,
+.input__lastname,
+.input__email {
+  width: 100%;
+}
+.input__name,
+.input__lastname,
+.input__email,
+.input__submit {
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background-color: rgba(111, 87, 77, 0.6);
+  color: var(--darkBrown);
+  border: none;
+  outline: none;
+}
+
+.input__name::placeholder,
+.input__lastname::placeholder,
+.input__email::placeholder {
+  color: var(--darkBrown);
+  text-transform: capitalize;
+}
+.input__submit {
+  background-color: var(--yellow);
+  color: var(--black);
+  transition: all 0.5s linear;
+  cursor: pointer;
+  text-transform: uppercase;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.person {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  grid-gap: 1rem;
+  border: 0.1rem solid rgba(111, 87, 77, 0.6);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  @include mobfirst(768) {
+    grid-template-columns: auto auto 1fr;
+    text-align: left;
+  }
+  &__img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: auto;
+  }
+}
+
+.error {
+  display: block;
+  color: #f57d91;
+  border-color: #f57d91;
+}
+
+.success {
+  display: block;
+  color: #008000;
+  border-color: #008000;
+}

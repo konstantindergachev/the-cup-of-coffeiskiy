@@ -1,0 +1,17 @@
+.banner {
+  grid-area: banner;
+  align-self: flex-end;
+  justify-self: center;
+  z-index: 3;
+  &__title {
+    font-size: 4rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--black);
+    margin-bottom: 1.25rem;
+    @include mobfirst(768) {
+      color: var(--brightYellow);
+      font-size: 9rem;
+    }
+  }
+}

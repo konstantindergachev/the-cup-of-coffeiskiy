@@ -1,0 +1,15 @@
+.menu{
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  z-index: 10;
+  &__svg{
+    width: 48px;
+    height: 48px;
+  }
+  &__img{
+    fill: var(--brightYellow);
+  }
+}

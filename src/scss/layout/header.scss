@@ -1,0 +1,18 @@
+.header{
+  position: relative;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: auto;
+  grid-template-columns: 80%;
+  grid-template-areas: 'banner' 'socials';
+  @include deskfirst(768){
+    // background-image: url(/img/headerBcg.jpg);
+    // background-position: center;
+    // background-size: cover;
+    // background-attachment: fixed; //this give us paralax effect
+    // background-repeat: no-repeat;
+    background: url(/img/headerBcg.jpg) center/cover fixed no-repeat;
+  }
+}

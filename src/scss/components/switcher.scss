@@ -1,0 +1,39 @@
+.switch {
+  @include mobfirst(769) {
+    position: relative;
+    width: 6.2rem;
+    background-color: var(--yellow);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
+  &__container {
+    display: none;
+    @include mobfirst(769) {
+      display: block;
+      position: absolute;
+      right: 5%;
+      bottom: 5%;
+      z-index: 3;
+    }
+  }
+  &__btn {
+    @include mobfirst(769) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: var(--brown);
+      height: 100%;
+      width: 50%;
+      border-radius: 0.5rem;
+      transition: all .3s ease-out;
+    }
+    &-slide {
+      left: 50%;
+    }
+  }
+}

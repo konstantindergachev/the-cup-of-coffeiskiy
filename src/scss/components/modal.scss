@@ -1,0 +1,46 @@
+.modal{
+  display: none;
+  &__show{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item{
+    background: url(/img/picture-3.jpg) center/cover;
+    width: 80vw;
+    height: 70vh;
+    align-self: flex-end;
+    margin-bottom: 0.5rem;
+    border: 0.5rem solid var(--brightYellow);
+    border-radius: 0.4rem;
+    @include mobfirst(768){
+      width: 60vw;
+      height: 80vh;
+    }
+  }
+  &__close{
+    align-self: flex-start;
+    justify-self: flex-end;
+    display: inline;
+    padding: 0.2rem 0.5rem;
+    font-weight: 700;
+    color: var(--brightYellow);
+    background-color: #ff0000;
+    border: 0.2rem solid var(--brightYellow);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    &:hover{
+      background-color: var(--brightYellow);
+      color: #ff0000;
+      border: 0.2rem solid #ff0000;
+    }
+  }
+}
