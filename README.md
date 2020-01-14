@@ -6,7 +6,7 @@
 
 ```bash
 # Step 1 Clone repo
-git clone git@github.com:konstantindergachev/webpack-template-layout.git
+git clone git@gitlab.com:KonstantinDergachev/the-cup-of-coffeiskiy.git
 
 # Step 2 Install dependencies
 yarn install -i
